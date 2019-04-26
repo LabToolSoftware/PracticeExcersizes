@@ -1,3 +1,5 @@
+package za.co.gavinmorris.cart;
+
 public class Item {
     String name;
     String description;
@@ -5,11 +7,11 @@ public class Item {
     int quantity;
 
 
-    public void Item(String name,String description,float cost,int quantity){
+    public void Item(String name,String description,float cost){
         this.name = name;
         this.description = description;
         this.cost = cost;
-        this.quantity = quantity;
+        this.quantity = 1;
     }
 
     public String getName() {
