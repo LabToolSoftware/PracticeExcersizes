@@ -7,7 +7,7 @@ public class Item {
     int quantity;
 
 
-    public void Item(String name,String description,float cost){
+    public Item(String name,String description,double cost){
         this.name = name;
         this.description = description;
         this.cost = cost;

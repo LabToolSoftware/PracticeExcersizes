@@ -6,11 +6,11 @@ import java.util.Map;
 public class Cart {
     private int id;
     private double vat;
-    private HashMap<String, Item> basket = new HashMap<String, Item>();;
+    private Map<String, Item> basket = new HashMap<String, Item>();
     private double total;
     private int number_of_items;
 
-    public void Cart(int id, double vat){
+    public Cart(int id, double vat){
         this.id = id;
         this.vat = vat;
     }
@@ -24,36 +24,30 @@ public class Cart {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
-    public int getNumberOfItems(HashMap<String, Item> basket){
+    public int getNumberOfItems(){
         int number_of_items = 0;
 
-        for (Item i : basket.values()){
-            number_of_items = number_of_items + i.getQuantity();
+        for (Item i : this.basket.values()){
+            number_of_items += i.getQuantity();
         }
-
-        return basket.size();
+        return number_of_items;
     }
 
-    private double calculateTotal(HashMap<String, Item> basket, double vat){
+    private double calculateTotal(){
 
         double total = 0;
 
-        for (Item i : basket.values()){
-            total = total + i.getCost()*vat;
+        for (Item i : this.basket.values()){
+            total += i.getCost()*(1+this.vat);
         }
         return total;
     }
 
     public double getTotal(){
-            if(!this.basket.isEmpty()){
-                return total;
-            }
-            else{
-                return 0;
-            }
+        return total;
     }
 
     public void addItem(Item item){
@@ -63,9 +57,7 @@ public class Cart {
         else{
             this.basket.put(item.getName(),item);
         }
-
-        this.total = calculateTotal(this.basket,this.vat);
-        this.number_of_items++;
+        this.total = calculateTotal();
     }
 
     public void removeItem(String name){

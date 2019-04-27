@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68d7d570-834e-4d47-b247-6ea8ec6bffd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_contrib_junit_theories_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" afterDir="false" />
@@ -23,17 +22,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="731">
+              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Cart#0;class#Cart#0" />
-                <element signature="method#getNumberOfItems#0;class#Cart#0" />
-                <element signature="method#calculateTotal#0;class#Cart#0" />
-                <element signature="method#getTotal#0;class#Cart#0" />
-                <element signature="method#addItem#0;class#Cart#0" />
+                <element signature="e#196#210#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
                 <element signature="method#removeItem#0;class#Cart#0" />
               </folding>
             </state>
@@ -43,8 +53,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="153">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding>
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,10 +68,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="410">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,15 +111,16 @@
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
         <option value="$PROJECT_DIR$/src/test/java/CartTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Cart.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Cart.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="946" />
+    <option name="x" value="945" />
     <option name="y" value="519" />
     <option name="width" value="1440" />
     <option name="height" value="777" />
@@ -154,12 +185,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,6 +251,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeExcersizes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.co.gavinmorris.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.co.gavinmorris.cart" />
+      <option name="MAIN_CLASS_NAME" value="za.co.gavinmorris.cart.ItemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="src in PracticeExcersizes" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="PracticeExcersizes" />
       <extension name="coverage">
@@ -235,6 +286,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CartTest" />
+        <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="JUnit.All in PracticeExcersizes" />
       </list>
     </recent_temporary>
@@ -257,14 +309,45 @@
       <option name="project" value="LOCAL" />
       <updated>1556247403748</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-Added JUnit testing framework&#10;-Fixed tests&#10;-Adding tests for Class: Cart">
+      <created>1556330345437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556330345437</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartTest - 2019.04.26 at 21h 55m 12s.xml">
+    <history-entry file="CartTest - 2019.04.27 at 10h 07m 20s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.26 at 21h 55m 56s.xml">
+    <history-entry file="CartTest - 2019.04.27 at 10h 07m 31s.xml">
+      <configuration name="CartTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest - 2019.04.27 at 10h 07m 56s.xml">
+      <configuration name="CartTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest - 2019.04.27 at 10h 12m 31s.xml">
+      <configuration name="CartTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest - 2019.04.27 at 10h 16m 57s.xml">
+      <configuration name="CartTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_PracticeExcersizes - 2019.04.27 at 10h 17m 06s.xml">
+      <configuration name="All in PracticeExcersizes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest - 2019.04.27 at 10h 17m 27s.xml">
+      <configuration name="ItemTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest - 2019.04.27 at 10h 19m 21s.xml">
+      <configuration name="ItemTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest - 2019.04.27 at 10h 19m 25s.xml">
+      <configuration name="CartTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest - 2019.04.27 at 10h 20m 59s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -277,7 +360,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25168985" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25367793" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32972136" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -302,50 +385,79 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Writing tests and debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Writing tests and debugging" />
+    <MESSAGE value="-Added JUnit testing framework&#10;-Fixed tests&#10;-Adding tests for Class: Cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Added JUnit testing framework&#10;-Fixed tests&#10;-Adding tests for Class: Cart" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/PracticeExcersizes.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/PracticeExcersizes.iml" />
+    <entry file="file://$PROJECT_DIR$/target/classes/README.md" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="731">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Cart#0;class#Cart#0" />
-            <element signature="method#getNumberOfItems#0;class#Cart#0" />
-            <element signature="method#calculateTotal#0;class#Cart#0" />
-            <element signature="method#getTotal#0;class#Cart#0" />
-            <element signature="method#addItem#0;class#Cart#0" />
+            <element signature="e#196#210#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
             <element signature="method#removeItem#0;class#Cart#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        <state relative-caret-position="410">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
