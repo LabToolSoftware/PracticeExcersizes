@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart;
+package za.co.gavinmorris.cart.domain;
 
 public class Item {
     String name;

@@ -3,10 +3,8 @@ package za.co.gavinmorris.cart;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.co.gavinmorris.cart.Cart;
-
-import java.util.Arrays;
-import java.util.List;
+import za.co.gavinmorris.cart.domain.Cart;
+import za.co.gavinmorris.cart.domain.Item;
 
 
 public class CartTest {
@@ -20,7 +18,7 @@ public class CartTest {
 
     @Before
     public void setup(){
-        this.cart = new Cart(this.id,this.initVat);
+        this.cart = new Cart(this.id);
         this.item = new Item("Test item1","Test item description",1.0);
     }
 

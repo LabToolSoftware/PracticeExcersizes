@@ -1,18 +1,19 @@
-package za.co.gavinmorris.cart;
+package za.co.gavinmorris.cart.domain;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Cart {
+
     private int id;
     private double vat;
     private Map<String, Item> basket = new HashMap<String, Item>();
     private double total;
     private int number_of_items;
 
-    public Cart(int id, double vat){
+    public Cart(int id){
         this.id = id;
-        this.vat = vat;
+        this.vat = 0.0;
     }
 
     public double getVAT() {
@@ -50,7 +51,7 @@ public class Cart {
         return total;
     }
 
-    public void addItem(Item item){
+    public void addItem(@org.jetbrains.annotations.NotNull Item item){
         if(this.basket.containsKey(item.getName())){
             this.basket.get(item.getName()).setQuantity(item.getQuantity()+1);
         }
