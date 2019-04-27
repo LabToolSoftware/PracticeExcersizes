@@ -1,13 +1,15 @@
 package za.co.gavinmorris.cart.domain;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Cart {
 
     private int id;
     private double vat;
-    private Map<String, Item> basket = new HashMap<String, Item>();
+    private Map<Integer, Item> basket = new HashMap<Integer, Item>();
     private double total;
     private int number_of_items;
 
@@ -42,7 +44,7 @@ public class Cart {
         double total = 0;
 
         for (Item i : this.basket.values()){
-            total += i.getCost()*(1+this.vat);
+            total += i.getCost()*(1+this.vat)*i.getQuantity();
         }
         return total;
     }
@@ -52,11 +54,11 @@ public class Cart {
     }
 
     public void addItem(@org.jetbrains.annotations.NotNull Item item){
-        if(this.basket.containsKey(item.getName())){
-            this.basket.get(item.getName()).setQuantity(item.getQuantity()+1);
+        if(this.basket.containsKey(item.getId())){
+            this.basket.get(item.getId()).setQuantity(item.getQuantity()+1);
         }
         else{
-            this.basket.put(item.getName(),item);
+            this.basket.put(item.getId(),item);
         }
         this.total = calculateTotal();
     }
@@ -65,5 +67,13 @@ public class Cart {
         if(this.basket.containsKey(name)){
             this.basket.remove(name);
         }
+    }
+
+    public ArrayList<Item> getBasket(){
+        ArrayList<Item> items = new ArrayList<Item>();
+        for(Item i : this.basket.values()){
+            items.add(i);
+        }
+        return items;
     }
 }

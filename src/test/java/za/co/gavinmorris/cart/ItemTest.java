@@ -12,7 +12,7 @@ public class ItemTest {
 
     @Before
     public void setup(){
-        this.item = new Item("Test item1","Test item description",1.0);
+        this.item = new Item(0,"Test item1","Test item description",1.0);
     }
 
     @Test
