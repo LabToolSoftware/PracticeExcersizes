@@ -3,7 +3,7 @@ package za.co.gavinmorris.cart;
 public class Item {
     String name;
     String description;
-    float cost;
+    double cost;
     int quantity;
 
 
@@ -38,7 +38,7 @@ public class Item {
         this.quantity = quantity;
     }
 
-    public float getCost() {
+    public double getCost() {
         return cost;
     }
 

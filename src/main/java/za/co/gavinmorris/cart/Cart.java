@@ -5,21 +5,21 @@ import java.util.Map;
 
 public class Cart {
     private int id;
-    private float vat;
+    private double vat;
     private HashMap<String, Item> basket = new HashMap<String, Item>();;
-    private float total;
+    private double total;
     private int number_of_items;
 
-    public void Cart(int id, float vat){
+    public void Cart(int id, double vat){
         this.id = id;
         this.vat = vat;
     }
 
-    public float getVAT() {
+    public double getVAT() {
         return vat;
     }
 
-    public void setVAT(float vat) {
+    public void setVAT(double vat) {
         this.vat = vat;
     }
 
@@ -37,9 +37,9 @@ public class Cart {
         return basket.size();
     }
 
-    private float calculateTotal(HashMap<String, Item> basket, float vat){
+    private double calculateTotal(HashMap<String, Item> basket, double vat){
 
-        float total = 0;
+        double total = 0;
 
         for (Item i : basket.values()){
             total = total + i.getCost()*vat;
@@ -47,7 +47,7 @@ public class Cart {
         return total;
     }
 
-    public float getTotal(){
+    public double getTotal(){
             if(!this.basket.isEmpty()){
                 return total;
             }

@@ -14,7 +14,8 @@ public class CartTest {
     private Cart cart;
     private Item item;
     int id = 0;
-    float vat = 0.15;
+    double vat = 0.15;
+    double delta = 0.01;
 
     @Before
     public void setup(){
@@ -25,6 +26,6 @@ public class CartTest {
     @Test
     public void shouldSetVAT(){
         cart.setVAT(this.vat);
-        Assert.assertEquals(cart.getVAT(), this.vat);
+        Assert.assertEquals(cart.getVAT(), this.vat,delta);
     }
 }
