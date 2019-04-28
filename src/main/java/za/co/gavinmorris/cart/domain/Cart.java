@@ -1,8 +1,9 @@
 package za.co.gavinmorris.cart.domain;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Cart {
@@ -53,9 +54,10 @@ public class Cart {
         return total;
     }
 
-    public void addItem(@org.jetbrains.annotations.NotNull Item item){
+    public void addItem(Item item){
         if(this.basket.containsKey(item.getId())){
-            this.basket.get(item.getId()).setQuantity(item.getQuantity()+1);
+            Item existing_item = this.basket.get(item.getId());
+            existing_item.setQuantity(existing_item.getQuantity()+1);
         }
         else{
             this.basket.put(item.getId(),item);
@@ -63,17 +65,21 @@ public class Cart {
         this.total = calculateTotal();
     }
 
-    public void removeItem(String name){
-        if(this.basket.containsKey(name)){
-            this.basket.remove(name);
+    public void removeItem(int itemId){
+        if(this.basket.containsKey(itemId)){
+            Item existing_item = this.basket.get(itemId);
+            if(existing_item.getQuantity() > 1){
+                existing_item.setQuantity(existing_item.getQuantity()-1);
+                this.total = calculateTotal();
+            }
+            else{
+                this.basket.remove(itemId);
+                this.total = calculateTotal();
+            }
         }
     }
 
-    public ArrayList<Item> getBasket(){
-        ArrayList<Item> items = new ArrayList<Item>();
-        for(Item i : this.basket.values()){
-            items.add(i);
-        }
-        return items;
+    public Map<Integer,Item> getBasket(){
+        return this.basket;
     }
 }

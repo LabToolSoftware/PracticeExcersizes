@@ -4,7 +4,6 @@
     <list default="true" id="68d7d570-834e-4d47-b247-6ea8ec6bffd9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" afterDir="false" />
@@ -23,32 +22,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/serializers/JSONSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="153">
               <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,29 +36,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="340">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getCart#0;class#CartController#0" />
+                <element signature="method#addItem#0;class#CartController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="646">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#205#220#0" expanded="true" />
                 <element signature="method#Cart#0;class#Cart#0" />
                 <element signature="method#getNumberOfItems#0;class#Cart#0" />
                 <element signature="method#calculateTotal#0;class#Cart#0" />
                 <element signature="method#addItem#0;class#Cart#0" />
                 <element signature="method#removeItem#0;class#Cart#0" />
-                <element signature="e#1615#1621#0" expanded="true" />
+                <element signature="e#1768#1769#0" expanded="true" />
+                <element signature="e#1789#1790#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,24 +81,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="476">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
               <folding>
                 <element signature="method#setup#0;class#CartTest#0" />
                 <element signature="method#shouldSetVAT#0;class#CartTest#0" />
-                <element signature="method#ShouldAddItemToCart#0;class#CartTest#0" />
                 <element signature="method#ShouldCalculateCartTotal#0;class#CartTest#0" />
                 <element signature="method#shouldCalculateNumberOfItems#0;class#CartTest#0" />
+                <element signature="method#shouldRemoveItem#0;class#CartTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="442">
+              <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
               <folding>
                 <element signature="method#ShouldSetQuantity#0;class#ItemTest#0" />
               </folding>
@@ -153,10 +134,10 @@
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/config/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/WebController.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" />
       </list>
     </option>
   </component>
@@ -295,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CartApplication">
+  <component name="RunManager" selected="JUnit.ItemTest">
     <configuration name="CartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="za.co.gavinmorris.cart.CartApplication" />
       <module name="PracticeExcecises" />
@@ -364,58 +345,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="PracticeExcecises" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="PracticeExcecises" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="Application.CartApplication" />
         <item itemvalue="JUnit.CartTest" />
-        <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="JUnit.All in PracticeExcersizes" />
       </list>
     </recent_temporary>
@@ -459,38 +393,45 @@
       <option name="project" value="LOCAL" />
       <updated>1556402230308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-Added REST endpoint for adding items to cart&#10;-Added tests for: Cart and Item methods">
+      <created>1556406477997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556406477997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartTest - 2019.04.27 at 18h 04m 30s.xml">
+    <history-entry file="CartTest - 2019.04.28 at 11h 49m 26s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 08m 55s.xml">
+    <history-entry file="ItemTest - 2019.04.28 at 11h 49m 32s.xml">
+      <configuration name="ItemTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest - 2019.04.28 at 11h 49m 48s.xml">
+      <configuration name="ItemTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest - 2019.04.28 at 11h 51m 43s.xml">
+      <configuration name="ItemTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest - 2019.04.28 at 11h 51m 48s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 10m 25s.xml">
+    <history-entry file="CartTest - 2019.04.28 at 11h 52m 02s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 10m 41s.xml">
+    <history-entry file="CartTest - 2019.04.28 at 11h 57m 03s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 11m 04s.xml">
+    <history-entry file="CartTest - 2019.04.28 at 11h 57m 15s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 11m 18s.xml">
+    <history-entry file="CartTest - 2019.04.28 at 11h 57m 30s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 11m 38s.xml">
-      <configuration name="CartTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 11m 45s.xml">
-      <configuration name="CartTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 12m 25s.xml">
-      <configuration name="CartTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest - 2019.04.27 at 18h 12m 39s.xml">
+    <history-entry file="CartTest - 2019.04.28 at 11h 57m 41s.xml">
       <configuration name="CartTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -503,7 +444,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25566602" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25964215" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32972136" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -511,7 +452,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32972136" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3993808" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -530,7 +471,8 @@
     <MESSAGE value="Writing tests and debugging" />
     <MESSAGE value="-Added JUnit testing framework&#10;-Fixed tests&#10;-Adding tests for Class: Cart" />
     <MESSAGE value="-Added JUnit testing framework&#10;-Fixed tests&#10;-Adding tests for Class: Cart&#10;-All tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Added JUnit testing framework&#10;-Fixed tests&#10;-Adding tests for Class: Cart&#10;-All tests passed" />
+    <MESSAGE value="-Added REST endpoint for adding items to cart&#10;-Added tests for: Cart and Item methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Added REST endpoint for adding items to cart&#10;-Added tests for: Cart and Item methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -550,10 +492,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java" />
     <entry file="file://$PROJECT_DIR$/target/classes/PracticeExcersizes.iml" />
     <entry file="file://$PROJECT_DIR$/target/classes/README.md" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,6 +506,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,75 +536,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="method#setup#0;class#CartTest#0" />
-            <element signature="method#shouldSetVAT#0;class#CartTest#0" />
-            <element signature="method#ShouldAddItemToCart#0;class#CartTest#0" />
-            <element signature="method#ShouldCalculateCartTotal#0;class#CartTest#0" />
-            <element signature="method#shouldCalculateNumberOfItems#0;class#CartTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="method#ShouldSetQuantity#0;class#ItemTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="340">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getCart#0;class#CartController#0" />
+            <element signature="method#addItem#0;class#CartController#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="646">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#205#220#0" expanded="true" />
             <element signature="method#Cart#0;class#Cart#0" />
             <element signature="method#getNumberOfItems#0;class#Cart#0" />
             <element signature="method#calculateTotal#0;class#Cart#0" />
             <element signature="method#addItem#0;class#Cart#0" />
             <element signature="method#removeItem#0;class#Cart#0" />
-            <element signature="e#1615#1621#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="method#setup#0;class#CartTest#0" />
+            <element signature="method#shouldSetVAT#0;class#CartTest#0" />
+            <element signature="method#ShouldCalculateCartTotal#0;class#CartTest#0" />
+            <element signature="method#shouldCalculateNumberOfItems#0;class#CartTest#0" />
+            <element signature="method#shouldRemoveItem#0;class#CartTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding>
+            <element signature="method#ShouldSetQuantity#0;class#ItemTest#0" />
           </folding>
         </state>
       </provider>

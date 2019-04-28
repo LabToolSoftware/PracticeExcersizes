@@ -21,4 +21,18 @@ public class ItemTest {
         Assert.assertEquals(this.item.getQuantity(),this.newQuantity);
     }
 
+    @Test
+    public void ShouldIncQuantity(){
+        this.item.setQuantity(this.item.getQuantity()+1);
+        this.item.setQuantity(this.item.getQuantity()+1);
+        Assert.assertEquals(this.item.getQuantity(),3);
+    }
+
+    @Test
+    public void ShouldDecQuantity(){
+        this.item.setQuantity(this.item.getQuantity()+1);
+        this.item.setQuantity(this.item.getQuantity()-1);
+        Assert.assertEquals(this.item.getQuantity(),1);
+    }
+
 }
