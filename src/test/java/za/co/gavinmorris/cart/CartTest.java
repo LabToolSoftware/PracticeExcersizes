@@ -20,23 +20,9 @@ public class CartTest {
     @Before
     public void setup(){
         this.cart = new Cart(this.id);
-        this.cart.setVAT(this.initVat);
-        this.item = new Item(0,"Test item1","Test item description",1.0);
-        this.item2 = new Item(1,"Test item1","Test item description",1.0);
+        this.item = new Item("abcd","Test item1","Test item description",1.0);
+        this.item2 = new Item("abcdef","Test item1","Test item description",1.0);
 
-    }
-
-    @Test
-    public void shouldSetVAT(){
-        double newVat = 0.16;
-        cart.setVAT(newVat);
-        Assert.assertEquals(cart.getVAT(), newVat,delta);
-    }
-
-    @Test
-    public void ShouldCalculateCartTotal(){
-        this.cart.addItem(this.item);
-        Assert.assertEquals(this.cart.getTotal(),1.15,this.delta);
     }
 
     @Test
@@ -53,7 +39,7 @@ public class CartTest {
         this.cart.addItem(this.item);
         this.cart.addItem(this.item);
 
-        this.cart.removeItem(this.item.getId());
+        this.cart.removeItem(this.item.getSku());
         Assert.assertEquals(this.cart.getNumberOfItems(),1);
     }
 

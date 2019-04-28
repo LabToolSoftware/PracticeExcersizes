@@ -9,24 +9,15 @@ import java.util.Map;
 public class Cart {
 
     private int id;
-    private double vat;
-    private Map<Integer, Item> basket = new HashMap<Integer, Item>();
-    private double total;
+    private Map<String, Integer> basket = new HashMap<String, Integer>();
     private int number_of_items;
-    private HashMap<Integer, Discountable> discountCalculators;
-    private Integer discount;
 
     public Cart(int id){
         this.id = id;
-        this.vat = 0.0;
     }
 
-    public Map<Integer,Item> getBasket(){
+    public Map<String,Integer> getBasket(){
         return this.basket;
-    }
-
-    public Integer getDiscount() {
-        return discount;
     }
 
     public int getId() {
@@ -36,60 +27,29 @@ public class Cart {
     public int getNumberOfItems(){
         int number_of_items = 0;
 
-        for (Item i : this.basket.values()){
-            number_of_items += i.getQuantity();
+        for (int i : this.basket.values()){
+            number_of_items += i;
         }
         return number_of_items;
     }
 
-    public double getTotal(){
-        return total;
-    }
-
-    public double getVAT() {
-        return vat;
-    }
-
-    public void setDiscount(Integer discount) {
-        this.discount = discount;
-    }
-
-    public void setVAT(double vat) {
-        this.vat = vat;
-    }
-
-    private double calculateTotal(){
-
-        double total = 0;
-
-        for (Item i : this.basket.values()){
-            total += i.getCost()*(1+this.vat)*i.getQuantity();
-        }
-        return total;
-    }
-
-    public void addItem(Item item){
-        if(this.basket.containsKey(item.getId())){
-            Item existing_item = this.basket.get(item.getId());
-            existing_item.setQuantity(existing_item.getQuantity()+1);
+    public void addItem(String sku){
+        if(this.basket.containsKey(sku)){
+            int currentQuantity = this.basket.get(sku);
+            this.basket.replace(sku,currentQuantity++);
         }
         else{
-            this.basket.put(item.getId(),item);
+            this.basket.put(sku,1);
         }
-        this.total = calculateTotal();
     }
 
-    public void removeItem(int itemId){
-        if(this.basket.containsKey(itemId)){
-            Item existing_item = this.basket.get(itemId);
-            if(existing_item.getQuantity() > 1){
-                existing_item.setQuantity(existing_item.getQuantity()-1);
-                this.total = calculateTotal();
-            }
-            else{
-                this.basket.remove(itemId);
-                this.total = calculateTotal();
-            }
+    public void removeItem(String sku){
+        if(this.basket.containsKey(sku)){
+            int currentQuantity = this.basket.get(sku);
+            this.basket.replace(sku,currentQuantity--);
+        }
+        else{
+            this.basket.remove(sku);
         }
     }
 

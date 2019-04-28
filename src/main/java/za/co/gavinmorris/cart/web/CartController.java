@@ -12,10 +12,11 @@ import java.util.Map;
 @RequestMapping(value = "/carts")
 public class CartController {
 
-    HashMap<Integer,Cart> carts = new HashMap<Integer, Cart>();
+    Map<Integer,Cart> carts = new HashMap<Integer, Cart>();
+
 
     @RequestMapping(value="",method=RequestMethod.GET)
-    public HashMap<Integer,Cart> getAllCarts(){
+    public Map<Integer,Cart> getAllCarts(){
         return carts;
     }
 
@@ -29,25 +30,24 @@ public class CartController {
         else{
             Cart cart = new Cart(parsedId);
             carts.put(parsedId,cart);
-            cart.setVAT(0.15);
             return cart;
         }
     }
 
-    @RequestMapping(value="/{id}/items/{item_id}",method = RequestMethod.POST)
-    public Cart addItemToCart(@PathVariable String id,@PathVariable String item_id){
-        Item item = new Item(Integer.parseInt(item_id),"Testname","TestItem1Description",1.00);
+    @RequestMapping(value="/{id}/items/{sku}",method = RequestMethod.POST)
+    public Cart addItemToCart(@PathVariable String id,@PathVariable String sku){
+        Item item = new Item(sku,"Testname","TestItem1Description",1.00);
         Cart cart = this.getCart(id);
-        cart.addItem(item);
+        cart.addItem(sku);
         return cart;
     }
 
-    @RequestMapping(value="/{id}/items/{item_id}",method = RequestMethod.DELETE)
-    public Cart removeItemFromCart(@PathVariable String id,@PathVariable String item_id){
+    @RequestMapping(value="/{id}/items/{sku}",method = RequestMethod.DELETE)
+    public Cart removeItemFromCart(@PathVariable String id,@PathVariable String sku){
         Cart cart = this.getCart(id);
-        Map<Integer,Item> basket = cart.getBasket();
-        if(basket.containsKey(Integer.parseInt(item_id))){
-            cart.removeItem(Integer.parseInt(item_id));
+        Map<String,Integer> basket = cart.getBasket();
+        if(basket.containsKey(sku)){
+            cart.removeItem(sku);
         }
         return cart;
     }

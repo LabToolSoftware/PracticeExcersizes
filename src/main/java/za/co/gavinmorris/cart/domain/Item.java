@@ -1,27 +1,24 @@
 package za.co.gavinmorris.cart.domain;
 
 public class Item {
-    private int id;
+    private String sku;
     private String name;
     private String description;
     private double cost;
-    private int quantity;
 
-
-    public Item(int id,String name,String description,double cost){
-        this.id = id;
+    public Item(String sku,String name,String description,double cost){
+        this.sku = sku;
         this.name = name;
         this.description = description;
         this.cost = cost;
-        this.quantity = 1;
     }
 
-    public int getId() {
-        return id;
+    public String getSku() {
+        return sku;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSku(String sku) {
+        this.sku= sku;
     }
 
     public String getName() {
@@ -38,14 +35,6 @@ public class Item {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public double getCost() {
