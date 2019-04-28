@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "/cart")
+@RequestMapping(value = "/carts")
 public class CartController {
 
     HashMap<Integer,Cart> carts = new HashMap<Integer, Cart>();
@@ -34,7 +34,7 @@ public class CartController {
         }
     }
 
-    @RequestMapping(value="/{id}/item/{item_id}",method = RequestMethod.POST)
+    @RequestMapping(value="/{id}/items/{item_id}",method = RequestMethod.POST)
     public Cart addItemToCart(@PathVariable String id,@PathVariable String item_id){
         Item item = new Item(Integer.parseInt(item_id),"Testname","TestItem1Description",1.00);
         Cart cart = this.getCart(id);
@@ -42,7 +42,7 @@ public class CartController {
         return cart;
     }
 
-    @RequestMapping(value="/{id}/item/{item_id}",method = RequestMethod.DELETE)
+    @RequestMapping(value="/{id}/items/{item_id}",method = RequestMethod.DELETE)
     public Cart removeItemFromCart(@PathVariable String id,@PathVariable String item_id){
         Cart cart = this.getCart(id);
         Map<Integer,Item> basket = cart.getBasket();

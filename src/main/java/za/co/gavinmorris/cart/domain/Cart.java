@@ -13,18 +13,20 @@ public class Cart {
     private Map<Integer, Item> basket = new HashMap<Integer, Item>();
     private double total;
     private int number_of_items;
+    private HashMap<Integer, Discountable> discountCalculators;
+    private Integer discount;
 
     public Cart(int id){
         this.id = id;
         this.vat = 0.0;
     }
 
-    public double getVAT() {
-        return vat;
+    public Map<Integer,Item> getBasket(){
+        return this.basket;
     }
 
-    public void setVAT(double vat) {
-        this.vat = vat;
+    public Integer getDiscount() {
+        return discount;
     }
 
     public int getId() {
@@ -40,6 +42,22 @@ public class Cart {
         return number_of_items;
     }
 
+    public double getTotal(){
+        return total;
+    }
+
+    public double getVAT() {
+        return vat;
+    }
+
+    public void setDiscount(Integer discount) {
+        this.discount = discount;
+    }
+
+    public void setVAT(double vat) {
+        this.vat = vat;
+    }
+
     private double calculateTotal(){
 
         double total = 0;
@@ -47,10 +65,6 @@ public class Cart {
         for (Item i : this.basket.values()){
             total += i.getCost()*(1+this.vat)*i.getQuantity();
         }
-        return total;
-    }
-
-    public double getTotal(){
         return total;
     }
 
@@ -79,7 +93,4 @@ public class Cart {
         }
     }
 
-    public Map<Integer,Item> getBasket(){
-        return this.basket;
-    }
 }
