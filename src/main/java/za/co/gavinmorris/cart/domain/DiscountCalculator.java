@@ -15,9 +15,7 @@ public abstract class DiscountCalculator extends TotalCalculator{
         return discountTotal;
     }
 
-    private Boolean verifyDiscount(Cart cart){
-        return false;
-    }
+    abstract Boolean verifyDiscount(Cart cart);
 
     public void setTotal(Cart cart){
         double total = 0.0;

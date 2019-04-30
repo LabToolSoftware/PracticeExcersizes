@@ -11,7 +11,7 @@ public class MinimumNumberDiscount extends DiscountCalculator{
         this.discount = discount;
     }
 
-    private Boolean verifyDiscount(Cart cart){
+    Boolean verifyDiscount(Cart cart){
         if(cart.getNumberOfItems() > this.thresholdNumber){
             return true;
         }
