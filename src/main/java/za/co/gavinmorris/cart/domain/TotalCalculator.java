@@ -28,8 +28,8 @@ public class TotalCalculator implements CalculateTotal{
 
     protected double calculateTotal(Cart cart){
         double total = 0.0;
-        Map<String,Integer> basket = cart.getBasket();
-        for(String i: basket.keySet()){
+        Map<Item,Integer> basket = cart.getBasket();
+        for(Item i: basket.keySet()){
             total += i.getCost()*basket.get(i)*(1+this.vat);
         }
         return total;

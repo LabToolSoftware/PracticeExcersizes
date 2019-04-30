@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/carts")
-public class CartController {
+public class OrderController {
 
     Map<Integer,Cart> carts = new HashMap<Integer, Cart>();
 

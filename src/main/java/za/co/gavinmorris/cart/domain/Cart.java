@@ -8,19 +8,19 @@ import java.util.Map;
 
 public class Cart {
 
-    private int id;
-    private Map<String, Integer> basket = new HashMap<String, Integer>();
+    private String id;
+    private Map<Item, Integer> basket = new HashMap<Item, Integer>();
     private int number_of_items;
 
-    public Cart(int id){
+    public Cart(String id){
         this.id = id;
     }
 
-    public Map<String,Integer> getBasket(){
+    public Map<Item,Integer> getBasket(){
         return this.basket;
     }
 
-    public int getId() {
+    public String getId() {
         return this.id;
     }
 
@@ -33,23 +33,23 @@ public class Cart {
         return number_of_items;
     }
 
-    public void addItem(String sku){
-        if(this.basket.containsKey(sku)){
-            int currentQuantity = this.basket.get(sku);
-            this.basket.replace(sku,currentQuantity++);
+    public void addItem(Item item){
+        if(this.basket.containsKey(item)){
+            int currentQuantity = this.basket.get(item);
+            this.basket.replace(item,currentQuantity++);
         }
         else{
-            this.basket.put(sku,1);
+            this.basket.put(item,1);
         }
     }
 
-    public void removeItem(String sku){
-        if(this.basket.containsKey(sku)){
-            int currentQuantity = this.basket.get(sku);
-            this.basket.replace(sku,currentQuantity--);
+    public void removeItem(Item item){
+        if(this.basket.containsKey(item)){
+            int currentQuantity = this.basket.get(item);
+            this.basket.replace(item,currentQuantity--);
         }
         else{
-            this.basket.remove(sku);
+            this.basket.remove(item);
         }
     }
 
