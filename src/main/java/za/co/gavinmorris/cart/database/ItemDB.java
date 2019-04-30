@@ -7,10 +7,10 @@ import java.util.Map;
 
 public class ItemDB {
 
-    private static ItemDB instance;
+    private static ItemDB single_instance = null;
     private Map<String, Item> items = new HashMap<String,Item>();
 
-    private void ItemDb(){
+    private ItemDB(){
         Item item1 = new Item("abcd","Item1","Item1 Description",1.00);
         Item item2 = new Item("abcde","Item2","Item2 Description",2.00);
         Item item3 = new Item("abcdef", "Item3","Item3 Description",3.00);
@@ -25,12 +25,10 @@ public class ItemDB {
     }
 
     public static ItemDB getInstance(){
-        if(instance==null){
-            return new ItemDB();
+        if(single_instance==null){
+            single_instance = new ItemDB();
         }
-        else{
-            return instance;
-        }
+        return single_instance;
     }
 
     public Item getItem(String itemID) {

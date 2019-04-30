@@ -10,10 +10,11 @@ public class Cart {
 
     private String id;
     private Map<Item, Integer> basket = new HashMap<Item, Integer>();
-    private int number_of_items;
-
+    private double total;
+    private int numberOfItems = 0;
     public Cart(String id){
         this.id = id;
+        this.total = 0.0;
     }
 
     public Map<Item,Integer> getBasket(){
@@ -25,32 +26,44 @@ public class Cart {
     }
 
     public int getNumberOfItems(){
-        int number_of_items = 0;
-
-        for (int i : this.basket.values()){
-            number_of_items += i;
-        }
-        return number_of_items;
+        return numberOfItems;
     }
 
     public void addItem(Item item){
-        if(this.basket.containsKey(item)){
-            int currentQuantity = this.basket.get(item);
-            this.basket.replace(item,currentQuantity++);
-        }
-        else{
-            this.basket.put(item,1);
+        if(this.basket.containsKey(item)) {
+                int currentQuantity = this.basket.get(item);
+                this.basket.put(item, currentQuantity+1);
+                this.total += item.getCost();
+                this.numberOfItems += 1;
+            }
+            else{
+                this.numberOfItems += 1;
+                this.total += item.getCost();
+                this.basket.put(item,1);
         }
     }
 
     public void removeItem(Item item){
-        if(this.basket.containsKey(item)){
-            int currentQuantity = this.basket.get(item);
-            this.basket.replace(item,currentQuantity--);
-        }
-        else{
-            this.basket.remove(item);
+        if(this.basket.containsKey(item)) {
+            if (this.basket.get(item) > 1) {
+                int currentQuantity = this.basket.get(item);
+                this.basket.put(item, currentQuantity-1);
+                this.total -= item.getCost();
+                this.numberOfItems -= 1;
+            }
+            else{
+                this.total -= item.getCost();
+                this.numberOfItems -= 1;
+                this.basket.remove(item);
+            }
         }
     }
 
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
 }

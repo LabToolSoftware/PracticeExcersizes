@@ -8,7 +8,7 @@ interface CalculateTotal{
     void setTotal(Cart cart);
 }
 
-public class TotalCalculator implements CalculateTotal{
+public class TaxCalculator implements CalculateTotal{
 
     private double vat;
     private double total;

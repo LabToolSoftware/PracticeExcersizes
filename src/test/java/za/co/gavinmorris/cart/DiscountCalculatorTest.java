@@ -15,7 +15,7 @@ public class DiscountCalculatorTest {
 
     @Before
     public void setup(){
-        this.cart = new Cart(0);
+        this.cart = new Cart("Test");
         this.item = new Item("abcd","Test item1","Test item description",1.0);
         this.calculator = new MinimumNumberDiscount(2,0.2);
     }

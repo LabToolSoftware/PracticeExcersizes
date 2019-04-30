@@ -9,21 +9,20 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Order {
 
     private String id;
-    private TotalCalculator totalCalculator;
+    private TaxCalculator taxCalculator;
     private ItemDB itemDB;
     private Map<String,Cart> trolley = new HashMap<String, Cart>();
-
 
     public Order(String id) {
         this.id = id;
         this.itemDB = ItemDB.getInstance();
     }
 
-    public Map<Cart,Double> getOrder(){
+    public Map<Cart,Double> getOrderTotal(){
         Map<Cart, Double> order = new HashMap<Cart, Double>();
         for(Cart cart: this.trolley.values()){
-            this.totalCalculator.setTotal(cart);
-            double total = totalCalculator.getTotal();
+            this.taxCalculator.setTotal(cart);
+            double total = taxCalculator.getTotal();
             order.put(cart,total);
         }
         return order;
@@ -40,27 +39,32 @@ public class Order {
             return this.trolley.get(cartID);
         }
         else{
-            return null;
+            this.addCart(cartID);
+            return this.trolley.get(cartID);
         }
     }
 
     public Cart addItemToCart(String cartID, String itemID) {
-        if (this.trolley.containsKey(cartID) & this.itemDB.getItem(itemID) != null) {
-            this.trolley.get(cartID).addItem(itemDB.getItem(itemID));
-            return this.trolley.get(cartID);
+        if (this.itemDB.getItem(itemID) != null) {
+            this.getCart(cartID).addItem(itemDB.getItem(itemID));
+            return this.getCart(cartID);
         } else {
             return null;
         }
     }
 
     public Cart removeItemFromCart(String cartID, String itemID){
-            if (this.trolley.containsKey(cartID) & this.itemDB.getItem(itemID) != null) {
-                this.trolley.get(cartID).removeItem(itemDB.getItem(itemID));
-                return this.trolley.get(cartID);
-            }
-            else {
-                return null;
-            }
+        if (this.itemDB.getItem(itemID) != null) {
+            this.getCart(cartID).removeItem(itemDB.getItem(itemID));
+            return this.getCart(cartID);
+        } else {
+            return this.getCart(cartID);
         }
+    }
+
+    public Map<String, Cart> getTrolley() {
+        return trolley;
+    }
+
 }
 

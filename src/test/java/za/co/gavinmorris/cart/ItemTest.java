@@ -15,24 +15,4 @@ public class ItemTest {
         this.item = new Item("abcd","Test item1","Test item description",1.0);
     }
 
-    @Test
-    public void ShouldSetQuantity(){
-        this.item.setQuantity(this.newQuantity);
-        Assert.assertEquals(this.item.getQuantity(),this.newQuantity);
-    }
-
-    @Test
-    public void ShouldIncQuantity(){
-        this.item.setQuantity(this.item.getQuantity()+1);
-        this.item.setQuantity(this.item.getQuantity()+1);
-        Assert.assertEquals(this.item.getQuantity(),3);
-    }
-
-    @Test
-    public void ShouldDecQuantity(){
-        this.item.setQuantity(this.item.getQuantity()+1);
-        this.item.setQuantity(this.item.getQuantity()-1);
-        Assert.assertEquals(this.item.getQuantity(),1);
-    }
-
 }

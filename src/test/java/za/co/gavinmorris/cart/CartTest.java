@@ -12,7 +12,7 @@ public class CartTest {
     private Cart cart;
     private Item item;
     private Item item2;
-    int id = 0;
+    String id = "test";
     double initVat = 0.15;
     double delta = 0.0001;
 
@@ -39,7 +39,7 @@ public class CartTest {
         this.cart.addItem(this.item);
         this.cart.addItem(this.item);
 
-        this.cart.removeItem(this.item.getSku());
+        this.cart.removeItem(this.item);
         Assert.assertEquals(this.cart.getNumberOfItems(),1);
     }
 

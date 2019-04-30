@@ -5,7 +5,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 import java.util.Map;
 
 
-public abstract class DiscountCalculator extends TotalCalculator{
+public abstract class DiscountCalculator extends TaxCalculator{
 
     private double discount;
     private double total;
