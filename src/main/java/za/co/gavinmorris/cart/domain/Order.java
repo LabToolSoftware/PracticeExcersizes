@@ -1,10 +1,9 @@
 package za.co.gavinmorris.cart.domain;
-
 import za.co.gavinmorris.cart.database.ItemDB;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+
 
 public class Order {
 

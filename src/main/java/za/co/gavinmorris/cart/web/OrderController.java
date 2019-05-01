@@ -2,11 +2,8 @@ package za.co.gavinmorris.cart.web;
 
 import org.springframework.web.bind.annotation.*;
 import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.domain.Item;
 import za.co.gavinmorris.cart.domain.Order;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController

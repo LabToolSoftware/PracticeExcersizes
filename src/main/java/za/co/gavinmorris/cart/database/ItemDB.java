@@ -5,7 +5,11 @@ import za.co.gavinmorris.cart.domain.Item;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ItemDB {
+interface ItemDBController{
+    Item getItem(String itemID);
+}
+
+public class ItemDB implements ItemDBController{
 
     private static ItemDB single_instance = null;
     private Map<String, Item> items = new HashMap<String,Item>();
