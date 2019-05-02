@@ -1,17 +1,22 @@
 package za.co.gavinmorris.cart.domain;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.jetbrains.annotations.NotNull;
+import za.co.gavinmorris.cart.serializers.CartSerializer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+
+@JsonSerialize(using = CartSerializer.class)
 public class Cart {
 
     private String id;
     private Map<Item, Integer> basket = new HashMap<Item, Integer>();
     private double total;
     private int numberOfItems = 0;
+
     public Cart(String id){
         this.id = id;
         this.total = 0.0;
@@ -65,5 +70,10 @@ public class Cart {
 
     public void setTotal(double total) {
         this.total = total;
+    }
+
+    @Override
+    public String toString() {
+        return "Cart {ID: " + id + ", Basket: " +basket+", NumberOfItems: "+numberOfItems+", Total: " +total+ " }";
     }
 }

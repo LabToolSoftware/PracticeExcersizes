@@ -47,7 +47,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item [sku=" + sku + ", name=" + name + " description=" + description+ " ]";
+        return getSku();
     }
 }
 
