@@ -4,44 +4,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 interface CalculateTotal{
-    double getTotal();
-    void setTotal(Cart cart);
+    double getTotalIncTax(double total);
 }
 
 public class TaxCalculator implements CalculateTotal{
 
-    private double vat;
+    private double tax;
     private double total;
-    private HashMap<String,Item> itemDb;
-
-    public double getTotal() {
-        return this.total;
-    }
 
     public double getVat() {
-        return vat;
+        return tax;
     }
 
-    public void setVat(double vat) {
-        this.vat = vat;
+    public void setVat(double tax) {
+        this.tax = tax;
     }
 
-    protected double calculateTotal(Cart cart){
-        double total = 0.0;
-        Map<Item,Integer> basket = cart.getBasket();
-        for(Item i: basket.keySet()){
-            total += i.getCost()*basket.get(i)*(1+this.vat);
-        }
-        return total;
-    }
-
-    public void setTotal(Cart cart){
-        if (cart.getNumberOfItems() == 0) {
-            this.total = 0.0;
-        }
-        else {
-            this.total = this.calculateTotal(cart);
-        }
+    public double getTotalIncTax(double total){
+        return total*(1+this.tax);
     }
 }
 

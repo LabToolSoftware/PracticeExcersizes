@@ -1,30 +1,45 @@
 package za.co.gavinmorris.cart.domain;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import za.co.gavinmorris.cart.database.ItemDB;
+import za.co.gavinmorris.cart.serializers.CartSerializer;
+import za.co.gavinmorris.cart.serializers.OrderSerializer;
 
 import java.util.HashMap;
 import java.util.Map;
 
-
+@JsonSerialize(using = OrderSerializer.class)
 public class Order {
 
     private String id;
     private TaxCalculator taxCalculator;
+    private Discount cartDiscount;
     private ItemDB itemDB;
     private Map<String,Cart> trolley = new HashMap<String, Cart>();
+    Map<Cart, Double> order = new HashMap<Cart, Double>();
 
     public Order(String id) {
         this.id = id;
         this.itemDB = ItemDB.getInstance();
     }
 
-    public Map<Cart,Double> getOrderTotal(){
-        Map<Cart, Double> order = new HashMap<Cart, Double>();
-        for(Cart cart: this.trolley.values()){
-            this.taxCalculator.setTotal(cart);
-            double total = taxCalculator.getTotal();
-            order.put(cart,total);
-        }
-        return order;
+    public String getId() {
+        return id;
+    }
+
+    public TaxCalculator getTaxCalculator() {
+        return taxCalculator;
+    }
+
+    public void setTaxCalculator(TaxCalculator taxCalculator) {
+        this.taxCalculator = taxCalculator;
+    }
+
+    public Discount getCartDiscount() {
+        return cartDiscount;
+    }
+
+    public void setCartDiscount(Discount cartDiscount) {
+        this.cartDiscount = cartDiscount;
     }
 
     public void addCart(String cartID) {
@@ -65,5 +80,13 @@ public class Order {
         return trolley;
     }
 
+    public double getOrderTotal(){
+        double orderTotal = 0.0;
+        for(Cart cart: this.trolley.values()){
+            double discountedTotal = this.cartDiscount.getDiscountTotal(cart);
+            orderTotal += taxCalculator.getTotalIncTax(discountedTotal);
+        }
+        return orderTotal;
+    }
 }
 

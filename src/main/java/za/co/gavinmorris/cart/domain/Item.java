@@ -5,12 +5,14 @@ public class Item {
     private String name;
     private String description;
     private double cost;
+    private double discountPerc;
 
-    public Item(String sku,String name,String description,double cost){
+    public Item(String sku,String name,String description,double cost, double discountPerc){
         this.sku = sku;
         this.name = name;
         this.description = description;
         this.cost = cost;
+        this.discountPerc = discountPerc;
     }
 
     public String getSku() {
@@ -43,6 +45,14 @@ public class Item {
 
     public void setCost(double cost) {
         this.cost = cost;
+    }
+
+    public double getDiscountPerc() {
+        return discountPerc;
+    }
+
+    public void setDiscountPerc(double discountPerc) {
+        this.discountPerc = discountPerc;
     }
 
     @Override

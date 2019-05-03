@@ -1,6 +1,6 @@
 package za.co.gavinmorris.cart.domain;
 
-public class MinimumNumberDiscount extends DiscountCalculator{
+public class MinimumNumberDiscount extends Discount{
 
     private int thresholdNumber;
     private double discount;
@@ -19,4 +19,5 @@ public class MinimumNumberDiscount extends DiscountCalculator{
             return false;
         }
     }
+
 }

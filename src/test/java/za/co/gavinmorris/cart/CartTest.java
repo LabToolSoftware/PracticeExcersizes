@@ -20,8 +20,8 @@ public class CartTest {
     @Before
     public void setup(){
         this.cart = new Cart(this.id);
-        this.item = new Item("abcd","Test item1","Test item description",1.0);
-        this.item2 = new Item("abcdef","Test item1","Test item description",1.0);
+        this.item = new Item("abcd","Test item1","Test item description",1.0,0.0);
+        this.item2 = new Item("abcdef","Test item1","Test item description",1.0,0.0);
 
     }
 

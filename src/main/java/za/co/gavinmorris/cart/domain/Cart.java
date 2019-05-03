@@ -38,12 +38,12 @@ public class Cart {
         if(this.basket.containsKey(item)) {
                 int currentQuantity = this.basket.get(item);
                 this.basket.put(item, currentQuantity+1);
-                this.total += item.getCost();
+                this.total += item.getCost()*(1-item.getDiscountPerc());
                 this.numberOfItems += 1;
             }
             else{
                 this.numberOfItems += 1;
-                this.total += item.getCost();
+                this.total += item.getCost()*(1-item.getDiscountPerc());
                 this.basket.put(item,1);
         }
     }
@@ -53,11 +53,11 @@ public class Cart {
             if (this.basket.get(item) > 1) {
                 int currentQuantity = this.basket.get(item);
                 this.basket.put(item, currentQuantity-1);
-                this.total -= item.getCost();
+                this.total -= item.getCost()*(1-item.getDiscountPerc());
                 this.numberOfItems -= 1;
             }
             else{
-                this.total -= item.getCost();
+                this.total -= item.getCost()*(1-item.getDiscountPerc());
                 this.numberOfItems -= 1;
                 this.basket.remove(item);
             }
