@@ -1,11 +1,8 @@
 package za.co.gavinmorris.cart;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
 import za.co.gavinmorris.cart.domain.Cart;
 import za.co.gavinmorris.cart.domain.Item;
-import za.co.gavinmorris.cart.domain.TaxCalculator;
+import za.co.gavinmorris.cart.domain.tax.TaxCalculator;
 
 public class TotalCalculatorTest {
 

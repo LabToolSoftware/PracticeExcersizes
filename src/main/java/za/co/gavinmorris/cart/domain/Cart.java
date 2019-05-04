@@ -12,13 +12,13 @@ import java.util.Map;
 @JsonSerialize(using = CartSerializer.class)
 public class Cart {
 
-    private String id;
+    private String cartID;
     private Map<Item, Integer> basket = new HashMap<Item, Integer>();
     private double total;
     private int numberOfItems = 0;
 
     public Cart(String id){
-        this.id = id;
+        this.cartID = id;
         this.total = 0.0;
     }
 
@@ -27,7 +27,7 @@ public class Cart {
     }
 
     public String getId() {
-        return this.id;
+        return this.cartID;
     }
 
     public int getNumberOfItems(){
@@ -72,8 +72,4 @@ public class Cart {
         this.total = total;
     }
 
-    @Override
-    public String toString() {
-        return "Cart {ID: " + id + ", Basket: " +basket+", NumberOfItems: "+numberOfItems+", Total: " +total+ " }";
-    }
 }

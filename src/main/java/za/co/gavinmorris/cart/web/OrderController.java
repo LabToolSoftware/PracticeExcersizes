@@ -2,6 +2,9 @@ package za.co.gavinmorris.cart.web;
 
 import org.springframework.web.bind.annotation.*;
 import za.co.gavinmorris.cart.domain.*;
+import za.co.gavinmorris.cart.domain.discount.Discount;
+import za.co.gavinmorris.cart.domain.discount.MinimumNumberDiscount;
+import za.co.gavinmorris.cart.domain.tax.TaxCalculator;
 
 import java.util.Map;
 

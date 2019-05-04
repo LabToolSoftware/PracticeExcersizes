@@ -1,7 +1,4 @@
-package za.co.gavinmorris.cart.domain;
-
-import java.util.HashMap;
-import java.util.Map;
+package za.co.gavinmorris.cart.domain.tax;
 
 interface CalculateTotal{
     double getTotalIncTax(double total);

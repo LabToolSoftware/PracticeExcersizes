@@ -1,7 +1,8 @@
 package za.co.gavinmorris.cart.domain;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import za.co.gavinmorris.cart.database.ItemDB;
-import za.co.gavinmorris.cart.serializers.CartSerializer;
+import za.co.gavinmorris.cart.domain.discount.Discount;
+import za.co.gavinmorris.cart.domain.tax.TaxCalculator;
 import za.co.gavinmorris.cart.serializers.OrderSerializer;
 
 import java.util.HashMap;
@@ -83,7 +84,7 @@ public class Order {
     public double getOrderTotal(){
         double orderTotal = 0.0;
         for(Cart cart: this.trolley.values()){
-            double discountedTotal = this.cartDiscount.getDiscountTotal(cart);
+            double discountedTotal = this.cartDiscount.getDiscount(cart);
             orderTotal += taxCalculator.getTotalIncTax(discountedTotal);
         }
         return orderTotal;

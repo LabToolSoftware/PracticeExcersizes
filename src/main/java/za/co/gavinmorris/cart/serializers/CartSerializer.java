@@ -19,7 +19,7 @@ public class CartSerializer extends StdSerializer<Cart> {
 
     public void serialize(Cart cart, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeStartObject();
-        jsonGenerator.writeStringField("id", cart.getId());
+        jsonGenerator.writeStringField("cartID", cart.getId());
         jsonGenerator.writeFieldName("basket");
         jsonGenerator.writeStartObject();
         for(Item i: cart.getBasket().keySet()){
