@@ -3,12 +3,7 @@ package za.co.gavinmorris.cart.domain.discount;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import za.co.gavinmorris.cart.domain.Cart;
 
-interface CalculateDiscount{
-    double getDiscount(Cart cart);
-    Boolean verifyDiscount(Cart cart);
-}
-
-public abstract class Discount implements CalculateDiscount{
+public abstract class Discount{
 
     private double discount;
 

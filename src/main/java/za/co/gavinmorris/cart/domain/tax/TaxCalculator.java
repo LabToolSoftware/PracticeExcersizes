@@ -1,10 +1,8 @@
 package za.co.gavinmorris.cart.domain.tax;
+import org.springframework.stereotype.Component;
 
-interface CalculateTotal{
-    double getTotalIncTax(double total);
-}
-
-public class TaxCalculator implements CalculateTotal{
+@Component
+public class TaxCalculator{
 
     private double tax;
     private double total;

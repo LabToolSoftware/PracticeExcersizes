@@ -1,20 +1,17 @@
 package za.co.gavinmorris.cart.database;
 
+import org.springframework.stereotype.Component;
 import za.co.gavinmorris.cart.domain.Item;
 
 import java.util.HashMap;
 import java.util.Map;
 
-interface ItemDBInterface{
-    Item getItem(String itemID);
-}
+@Component
+public class ItemDB{
 
-public class ItemDB implements ItemDBInterface{
-
-    private static ItemDB single_instance = null;
     private Map<String, Item> items = new HashMap<String,Item>();
 
-    private ItemDB(){
+    public ItemDB(){
         Item item1 = new Item("abcd","Item1","Item1 Description",1.00,0.00);
         Item item2 = new Item("abcde","Item2","Item2 Description",2.00,0.00);
         Item item3 = new Item("abcdef", "Item3","Item3 Description",3.00,0.00);
@@ -26,13 +23,6 @@ public class ItemDB implements ItemDBInterface{
         items.put(item3.getSku(),item3);
         items.put(item4.getSku(),item4);
         items.put(item5.getSku(),item5);
-    }
-
-    public static ItemDB getInstance(){
-        if(single_instance==null){
-            single_instance = new ItemDB();
-        }
-        return single_instance;
     }
 
     public Item getItem(String itemID) {

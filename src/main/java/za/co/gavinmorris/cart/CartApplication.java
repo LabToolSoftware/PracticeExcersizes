@@ -6,9 +6,8 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
 import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.domain.Order;
+
 import za.co.gavinmorris.cart.serializers.CartSerializer;
-import za.co.gavinmorris.cart.serializers.OrderSerializer;
 
 @SpringBootApplication
 public class CartApplication {
@@ -17,8 +16,6 @@ public class CartApplication {
         ObjectMapper mapper = new ObjectMapper();
         SimpleModule module = new SimpleModule();
         module.addSerializer(Cart.class, new CartSerializer());
-        mapper.registerModule(module);
-        module.addSerializer(Order.class, new OrderSerializer());
         mapper.registerModule(module);
     }
 }

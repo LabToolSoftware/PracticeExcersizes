@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-
 @JsonSerialize(using = CartSerializer.class)
 public class Cart {
 

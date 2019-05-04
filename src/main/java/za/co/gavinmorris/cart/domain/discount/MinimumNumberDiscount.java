@@ -1,32 +1,42 @@
 package za.co.gavinmorris.cart.domain.discount;
 
+import org.springframework.stereotype.Component;
 import za.co.gavinmorris.cart.domain.Cart;
 import za.co.gavinmorris.cart.domain.discount.Discount;
 
+@Component
 public class MinimumNumberDiscount extends Discount {
 
-    private int thresholdNumber;
-    private double discount;
-    private double total;
-
-    public MinimumNumberDiscount(int thresholdNumber,double discount) {
-        this.thresholdNumber = thresholdNumber;
-        this.discount = discount;
+    public MinimumNumberDiscount() {
     }
 
-    @Override
-    double applyDiscount(double total) {
-        double discountTotal = total * (1 - this.discount);
+    double applyDiscount(double total, double discount) {
+        double discountTotal = total * (1 - discount);
         return discountTotal;
     }
 
-    @Override
-    public Boolean verifyDiscount(Cart cart){
-        if(cart.getNumberOfItems() > this.thresholdNumber){
+    public Boolean verifyDiscount(Cart cart, int minimumItems){
+        if(cart.getNumberOfItems() > minimumItems){
             return true;
         }
         else{
             return false;
+        }
+    }
+
+    public double getDiscount(Cart cart, int minimumItems, double discount) {
+        double total = 0.0;
+
+        if (cart.getNumberOfItems() > 0) {
+            if (verifyDiscount(cart)) {
+                total = applyDiscount(cart.getTotal(), discount);
+
+                return total;
+            } else {
+                return cart.getTotal();
+            }
+        } else {
+            return cart.getTotal();
         }
     }
 }

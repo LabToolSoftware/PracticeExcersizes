@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart;
+package za.co.gavinmorris.cart.domain;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -26,7 +26,7 @@ public class DiscountTest {
         cart.addItem(item);
         cart.addItem(item);
 
-        calculator = new MinimumNumberDiscount(5,0.2);
+        calculator = new MinimumNumberDiscount();
     }
 
 

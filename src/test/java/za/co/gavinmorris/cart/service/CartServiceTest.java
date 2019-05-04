@@ -1,31 +1,31 @@
-package za.co.gavinmorris.cart;
+package za.co.gavinmorris.cart.service;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.co.gavinmorris.cart.database.ItemDB;
 import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.domain.Order;
+import za.co.gavinmorris.cart.services.CartService;
 
-public class OrderTest {
+public class CartServiceTest {
 
-    Order order;
+    CartService order;
 
     @Before
     public void setup(){
-        this.order = new Order("test");
+        this.order = new CartService();
     }
 
     @Test
     public void shouldAddCartToOrder(){
-        this.order.addCart("test");
-        Assert.assertEquals(this.order.getCart("test").getId(),"test");
+        this.order.add("test");
+        Assert.assertEquals(this.order.get("test").getId(),"test");
     }
 
     @Test
     public void shouldAddItemToCart(){
-        this.order.addCart("test");
-        Cart cart = this.order.addItemToCart("test","abcd");
+        this.order.add("test");
+        Cart cart = this.order.addItem("test","abcd");
         Assert.assertEquals(cart.getNumberOfItems(),1);
     }
 }

@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart;
+package za.co.gavinmorris.cart.database;
 import org.junit.Test;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,7 +11,7 @@ public class ItemDBTest {
 
     @Before
     public void setup(){
-        this.itemDB = ItemDB.getInstance();
+        this.itemDB = new ItemDB();
     }
 
     @Test

@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart;
+package za.co.gavinmorris.cart.domain;
 
 import za.co.gavinmorris.cart.domain.Cart;
 import za.co.gavinmorris.cart.domain.Item;
