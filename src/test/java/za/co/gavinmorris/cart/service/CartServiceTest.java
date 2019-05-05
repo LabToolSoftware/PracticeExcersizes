@@ -3,29 +3,28 @@ package za.co.gavinmorris.cart.service;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.co.gavinmorris.cart.database.ItemDB;
 import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.services.CartService;
 
 public class CartServiceTest {
 
-    CartService order;
+    CartService cartService;
+    Cart cart;
 
     @Before
     public void setup(){
-        this.order = new CartService();
+        this.cartService = new CartService();
+        this.cartService.add("test");
+        this.cartService.addItem("test","test");
     }
 
     @Test
-    public void shouldAddCartToOrder(){
-        this.order.add("test");
-        Assert.assertEquals(this.order.get("test").getId(),"test");
+    public void shouldAddCartToRepository(){
+        Assert.assertEquals(this.cartService.get("test").getId(),"test");
     }
 
     @Test
     public void shouldAddItemToCart(){
-        this.order.add("test");
-        Cart cart = this.order.addItem("test","abcd");
+        Cart cart = this.cartService.addItem("test","abcd");
         Assert.assertEquals(cart.getNumberOfItems(),1);
     }
 }

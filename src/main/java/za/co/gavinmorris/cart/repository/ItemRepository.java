@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart.database;
+package za.co.gavinmorris.cart.repository;
 
 import org.springframework.stereotype.Component;
 import za.co.gavinmorris.cart.domain.Item;
@@ -7,11 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class ItemDB{
+public class ItemRepository implements CustomRepository<Item>{
 
     private Map<String, Item> items = new HashMap<String,Item>();
 
-    public ItemDB(){
+    public ItemRepository(){
         Item item1 = new Item("abcd","Item1","Item1 Description",1.00,0.00);
         Item item2 = new Item("abcde","Item2","Item2 Description",2.00,0.00);
         Item item3 = new Item("abcdef", "Item3","Item3 Description",3.00,0.00);
@@ -25,12 +25,20 @@ public class ItemDB{
         items.put(item5.getSku(),item5);
     }
 
-    public Item getItem(String itemID) {
-        if(this.items.containsKey(itemID)){
-            return items.get(itemID);
+    public Item find(String id) {
+        if(this.items.containsKey(id)){
+            return items.get(id);
         }
         else{
             return null;
         }
+    }
+
+    public void save(Item item) {
+        items.put(item.getSku(),item);
+    }
+
+    public void remove(String id) {
+        items.remove(id);
     }
 }

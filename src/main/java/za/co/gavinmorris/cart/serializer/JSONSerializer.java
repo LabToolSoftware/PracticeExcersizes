@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart.serializers;
+package za.co.gavinmorris.cart.serializer;
 
 
 interface JSONSerializable{

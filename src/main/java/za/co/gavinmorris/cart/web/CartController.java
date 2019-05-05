@@ -9,7 +9,7 @@ import za.co.gavinmorris.cart.domain.Cart;
 import za.co.gavinmorris.cart.domain.discount.Discount;
 import za.co.gavinmorris.cart.domain.discount.MinimumNumberDiscount;
 import za.co.gavinmorris.cart.domain.tax.TaxCalculator;
-import za.co.gavinmorris.cart.services.CartService;
+import za.co.gavinmorris.cart.service.CartService;
 
 @RestController
 public class CartController {
@@ -37,7 +37,7 @@ public class CartController {
         return cartService.get(cartID);
     }
 
-    @RequestMapping(value="/cart/{cartID}/items/{sku}",method = RequestMethod.POST)
+    @RequestMapping(value="/cart/{cartID}/item/{sku}",method = RequestMethod.POST)
     public Cart addItemToCart(@PathVariable String cartID,@PathVariable String sku){
         return cartService.addItem(cartID,sku);
     }

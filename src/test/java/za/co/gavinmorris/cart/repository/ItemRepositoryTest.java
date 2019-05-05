@@ -1,22 +1,21 @@
-package za.co.gavinmorris.cart.database;
+package za.co.gavinmorris.cart.repository;
 import org.junit.Test;
 import org.junit.Assert;
 import org.junit.Before;
-import za.co.gavinmorris.cart.database.ItemDB;
 import za.co.gavinmorris.cart.domain.Item;
 
-public class ItemDBTest {
+public class ItemRepositoryTest {
 
-    private ItemDB itemDB;
+    private ItemRepository itemRepository;
 
     @Before
     public void setup(){
-        this.itemDB = new ItemDB();
+        this.itemRepository = new ItemRepository();
     }
 
     @Test
     public void shouldGetItemFromDB(){
-        Item item = itemDB.getItem("abcd");
+        Item item = itemRepository.find("abcd");
         Assert.assertEquals(item.getSku(),"abcd");
     }
 }

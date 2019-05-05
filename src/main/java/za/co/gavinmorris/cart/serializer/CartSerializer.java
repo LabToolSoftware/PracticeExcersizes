@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart.serializers;
+package za.co.gavinmorris.cart.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
@@ -31,7 +31,7 @@ public class CartSerializer extends StdSerializer<Cart> {
             jsonGenerator.writeEndObject();
         }
         jsonGenerator.writeEndObject();
-        jsonGenerator.writeNumberField("total", cart.getTotal());
+        jsonGenerator.writeNumberField("totalexcvat", cart.getTotal());
         jsonGenerator.writeEndObject();
     }
 }
