@@ -3,18 +3,22 @@ package za.co.gavinmorris.cart.domain;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import za.co.gavinmorris.cart.serializer.CartSerializer;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.HashMap;
 import java.util.Map;
 
 @JsonSerialize(using = CartSerializer.class)
+@Entity
 public class Cart {
 
-    private String cartID;
+    @Id
+    private Long cartID;
     private Map<Item, Integer> basket = new HashMap<Item, Integer>();
     private double total;
     private int numberOfItems = 0;
 
-    public Cart(String id){
+    public Cart(Long id){
         this.cartID = id;
         this.total = 0.0;
     }
@@ -23,7 +27,7 @@ public class Cart {
         return this.basket;
     }
 
-    public String getId() {
+    public Long getId() {
         return this.cartID;
     }
 

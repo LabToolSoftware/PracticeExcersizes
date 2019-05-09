@@ -1,6 +1,11 @@
 package za.co.gavinmorris.cart.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Item {
+    @Id
     private String sku;
     private String name;
     private String description;

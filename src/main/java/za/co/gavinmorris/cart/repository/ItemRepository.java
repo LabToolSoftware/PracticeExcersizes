@@ -1,15 +1,19 @@
 package za.co.gavinmorris.cart.repository;
 
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import za.co.gavinmorris.cart.domain.Item;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @Component
-public class ItemRepository implements CustomRepository<Item>{
+@Repository
+public class ItemRepository implements CrudRepository<Item,Long> {
 
-    private Map<String, Item> items = new HashMap<String,Item>();
+    private Map<Long, Item> items = new HashMap<Long,Item>();
 
     public ItemRepository(){
         Item item1 = new Item("abcd","Item1","Item1 Description",1.00,0.00);
@@ -40,5 +44,45 @@ public class ItemRepository implements CustomRepository<Item>{
 
     public void remove(String id) {
         items.remove(id);
+    }
+
+    public <S extends Item> Iterable<S> saveAll(Iterable<S> iterable) {
+        return null;
+    }
+
+    public Optional<Item> findById(Long aLong) {
+        return Optional.empty();
+    }
+
+    public boolean existsById(Long aLong) {
+        return false;
+    }
+
+    public Iterable<Item> findAll() {
+        return null;
+    }
+
+    public Iterable<Item> findAllById(Iterable<Long> iterable) {
+        return null;
+    }
+
+    public long count() {
+        return 0;
+    }
+
+    public void deleteById(Long aLong) {
+
+    }
+
+    public void delete(Item item) {
+
+    }
+
+    public void deleteAll(Iterable<? extends Item> iterable) {
+
+    }
+
+    public void deleteAll() {
+
     }
 }
