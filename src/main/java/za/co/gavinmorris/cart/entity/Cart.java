@@ -1,15 +1,12 @@
 package za.co.gavinmorris.cart.entity;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.springframework.data.annotation.Id;
 import za.co.gavinmorris.cart.serializer.CartSerializer;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.util.HashMap;
 import java.util.Map;
 
 @JsonSerialize(using = CartSerializer.class)
-@Entity
 public class Cart {
 
     @Id

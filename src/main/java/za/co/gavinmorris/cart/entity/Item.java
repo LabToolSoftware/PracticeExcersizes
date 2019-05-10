@@ -1,9 +1,10 @@
 package za.co.gavinmorris.cart.entity;
 
+import org.springframework.data.annotation.Id;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
 @Table(name = "inventory")
 public class Item implements Serializable{
 

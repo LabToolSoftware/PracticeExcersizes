@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68d7d570-834e-4d47-b247-6ea8ec6bffd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/discount/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/discount/Discount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/discount/MinimumNumberDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/discount/MinimumNumberDiscount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/serializer/CartSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/serializer/CartSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/DiscountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/DiscountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/ItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/TotalCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/TotalCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/repository/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/repository/ItemRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/service/CartServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/service/CartServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,22 +28,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/ItemRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,14 +40,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/service/CartService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/ItemRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#add#0;class#CartService#0" />
-                <element signature="method#getTotal#0;class#CartService#0" />
               </folding>
             </state>
           </provider>
@@ -77,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -115,10 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/TotalCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/DiscountCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemDBTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/OrderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Tax.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/CartTest.java" />
@@ -149,10 +136,7 @@
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/services/CartService.java" />
         <option value="$PROJECT_DIR$/beans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/serializer/OrderSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java" />
         <option value="$PROJECT_DIR$/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Cart.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/CartRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/domain/Item.java" />
@@ -162,17 +146,25 @@
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/DiscountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/domain/ItemTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/co/gavinmorris/cart/service/CartServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/service/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/service/CartService.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/ItemRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1909" />
-    <option name="width" value="1940" />
-    <option name="height" value="2124" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1440" />
+    <option name="height" value="779" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -180,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,51 +195,46 @@
               <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticeExcersizes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticeExcersizes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -274,6 +260,7 @@
       <recent name="za.co.gavinmorris.cart.serializer" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="za.co.gavinmorris.cart.entity" />
       <recent name="za.co.gavinmorris.cart.domain" />
     </key>
   </component>
@@ -574,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557361868611</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="-Implementing Spring Repository for Cart and Item entities">
+      <created>1557449910446</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557449910446</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -610,7 +604,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1293" height="1416" extended-state="0" />
+    <frame x="-7" y="-7" width="2575" height="1424" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -618,15 +612,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.8783455" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14473161" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32972136" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32866043" />
+      <window_info anchor="bottom" id="Messages" order="2" visible="true" weight="0.32275543" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32972136" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2538941" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.27476782" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3993808" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -646,15 +640,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.8783455" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.8783455" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32972136" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32866043" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32972136" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2538941" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.252322" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3993808" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -806,30 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/CustomRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -911,20 +881,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/PracticeExercises.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/service/CartService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="361">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#add#0;class#CartService#0" />
@@ -933,9 +896,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/web/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="242">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -943,10 +909,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -955,8 +928,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/repository/ItemRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/CartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/gavinmorris/cart/entity/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
