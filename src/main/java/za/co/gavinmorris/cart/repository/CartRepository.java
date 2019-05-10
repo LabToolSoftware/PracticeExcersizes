@@ -1,62 +1,27 @@
 package za.co.gavinmorris.cart.repository;
 
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-import za.co.gavinmorris.cart.domain.Cart;
+import za.co.gavinmorris.cart.entity.Cart;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 
 @Component
-@Repository
-public class CartRepository implements CrudRepository<Cart,Long> {
+public class CartRepository implements CustomRepository<Cart> {
 
-    Map<Long, Cart> carts = new HashMap<Long, Cart>();
+    Map<String, Cart> carts = new HashMap<String, Cart>();
 
-    public <S extends Cart> S save(S s) {
-        return null;
+
+    public Cart find(String id) {
+        return carts.get(id);
     }
 
-    public <S extends Cart> Iterable<S> saveAll(Iterable<S> iterable) {
-        return null;
+    public void save(Cart cart) {
+        carts.put(cart.getId(), cart);
     }
 
-    public Optional<Cart> findById(Long aLong) {
-        return Optional.empty();
-    }
-
-    public boolean existsById(Long aLong) {
-        return false;
-    }
-
-    public Iterable<Cart> findAll() {
-        return null;
-    }
-
-    public Iterable<Cart> findAllById(Iterable<Long> iterable) {
-        return null;
-    }
-
-    public long count() {
-        return 0;
-    }
-
-    public void deleteById(Long aLong) {
-
-    }
-
-    public void delete(Cart cart) {
-
-    }
-
-    public void deleteAll(Iterable<? extends Cart> iterable) {
-
-    }
-
-    public void deleteAll() {
-
+    public void remove(String id) {
+        carts.remove(id);
     }
 }

@@ -3,8 +3,8 @@ package za.co.gavinmorris.cart.serializer;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
-import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.domain.Item;
+import za.co.gavinmorris.cart.entity.Cart;
+import za.co.gavinmorris.cart.entity.Item;
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ public class CartSerializer extends StdSerializer<Cart> {
         jsonGenerator.writeFieldName("basket");
         jsonGenerator.writeStartObject();
         for(Item i: cart.getBasket().keySet()){
-            jsonGenerator.writeFieldName(i.getSku());
+            jsonGenerator.writeFieldName(i.getId());
             jsonGenerator.writeStartObject();
             jsonGenerator.writeStringField("name",i.getName());
             jsonGenerator.writeNumberField("cost",i.getCost());

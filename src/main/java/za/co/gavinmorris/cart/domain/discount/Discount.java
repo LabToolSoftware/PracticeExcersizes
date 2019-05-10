@@ -1,7 +1,6 @@
 package za.co.gavinmorris.cart.domain.discount;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import za.co.gavinmorris.cart.domain.Cart;
+import za.co.gavinmorris.cart.entity.Cart;
 
 public abstract class Discount{
 

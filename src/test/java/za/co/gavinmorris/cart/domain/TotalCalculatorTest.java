@@ -1,7 +1,7 @@
 package za.co.gavinmorris.cart.domain;
 
-import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.domain.Item;
+import za.co.gavinmorris.cart.entity.Cart;
+import za.co.gavinmorris.cart.entity.Item;
 import za.co.gavinmorris.cart.domain.tax.TaxCalculator;
 
 public class TotalCalculatorTest {

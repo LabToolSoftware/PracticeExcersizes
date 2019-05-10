@@ -5,8 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import za.co.gavinmorris.cart.domain.Cart;
+import za.co.gavinmorris.cart.entity.Cart;
 
 import za.co.gavinmorris.cart.serializer.CartSerializer;
 

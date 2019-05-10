@@ -1,8 +1,7 @@
 package za.co.gavinmorris.cart.domain.discount;
 
 import org.springframework.stereotype.Component;
-import za.co.gavinmorris.cart.domain.Cart;
-import za.co.gavinmorris.cart.domain.discount.Discount;
+import za.co.gavinmorris.cart.entity.Cart;
 
 @Component
 public class MinimumNumberDiscount extends Discount {

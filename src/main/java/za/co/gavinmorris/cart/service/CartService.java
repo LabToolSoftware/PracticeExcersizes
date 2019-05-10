@@ -2,7 +2,7 @@ package za.co.gavinmorris.cart.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import za.co.gavinmorris.cart.domain.Cart;
+import za.co.gavinmorris.cart.entity.Cart;
 import za.co.gavinmorris.cart.domain.discount.MinimumNumberDiscount;
 import za.co.gavinmorris.cart.domain.tax.TaxCalculator;
 import za.co.gavinmorris.cart.repository.CartRepository;
@@ -39,13 +39,13 @@ public class CartService {
         cartRepository.remove(cartID);
     }
 
-    public Cart addItem(String cartID, String itemID) {
-            this.cartRepository.find(cartID).addItem(itemRepository.find(itemID));
+    public Cart addItem(String cartID, Long itemID) {
+            this.cartRepository.find(cartID).addItem(itemRepository.findById(itemID).get());
             return this.cartRepository.find(cartID);
     }
 
-    public Cart removeItem(String cartID, String itemID){
-        this.cartRepository.find(cartID).removeItem(itemRepository.find(itemID));
+    public Cart removeItem(String cartID, Long itemID){
+        this.cartRepository.find(cartID).removeItem(itemRepository.findById(itemID).get());
         return this.cartRepository.find(cartID);
     }
 

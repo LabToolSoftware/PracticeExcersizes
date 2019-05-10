@@ -1,4 +1,4 @@
-package za.co.gavinmorris.cart.domain;
+package za.co.gavinmorris.cart.entity;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import za.co.gavinmorris.cart.serializer.CartSerializer;
@@ -13,12 +13,12 @@ import java.util.Map;
 public class Cart {
 
     @Id
-    private Long cartID;
+    private String cartID;
     private Map<Item, Integer> basket = new HashMap<Item, Integer>();
     private double total;
     private int numberOfItems = 0;
 
-    public Cart(Long id){
+    public Cart(String id){
         this.cartID = id;
         this.total = 0.0;
     }
@@ -27,7 +27,7 @@ public class Cart {
         return this.basket;
     }
 
-    public Long getId() {
+    public String getId() {
         return this.cartID;
     }
 
@@ -39,12 +39,12 @@ public class Cart {
         if(this.basket.containsKey(item)) {
                 int currentQuantity = this.basket.get(item);
                 this.basket.put(item, currentQuantity+1);
-                this.total += item.getCost()*(1-item.getDiscountPerc());
+                this.total += item.getCost()*(1-item.getDiscount());
                 this.numberOfItems += 1;
             }
             else{
                 this.numberOfItems += 1;
-                this.total += item.getCost()*(1-item.getDiscountPerc());
+                this.total += item.getCost()*(1-item.getDiscount());
                 this.basket.put(item,1);
         }
     }
@@ -53,11 +53,11 @@ public class Cart {
         if (this.basket.get(item) > 1) {
             int currentQuantity = this.basket.get(item);
             this.basket.put(item, currentQuantity-1);
-            this.total -= item.getCost()*(1-item.getDiscountPerc());
+            this.total -= item.getCost()*(1-item.getDiscount());
             this.numberOfItems -= 1;
         }
         else{
-            this.total -= item.getCost()*(1-item.getDiscountPerc());
+            this.total -= item.getCost()*(1-item.getDiscount());
             this.numberOfItems -= 1;
             this.basket.remove(item);
             }
